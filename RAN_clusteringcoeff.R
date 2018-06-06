@@ -40,4 +40,3 @@ ccApoll <- function(n, k){
   ## plot(Apoll_graph) Plot simulated Apollonian networks
   return(mean(transitivity(Apoll_graph, type = "local")))
 }
-ccApoll(100, 4)
