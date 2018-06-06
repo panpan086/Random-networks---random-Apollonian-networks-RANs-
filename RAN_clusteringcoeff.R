@@ -36,7 +36,10 @@ ccApoll <- function(n, k){
       break
     }
   }
+  ## Generate the RAN based off the adjacency matrix
   Apoll_graph <- graph_from_adjacency_matrix(adj, mode = "undirected")
-  ## plot(Apoll_graph) Plot simulated Apollonian networks
+  
+  ## plot(Apoll_graph) can be used to plot the simulated RAN if needed
+  ## Compute the mean of local clustering coefficients
   return(mean(transitivity(Apoll_graph, type = "local")))
 }
