@@ -32,7 +32,7 @@ ccApoll <- function(n, k){
     ## Deactivate the clique that recruits the newcomer
     activecliques <- activecliques[,-luckytri]
     d <- d + 1
-    if(d > n + 2){
+    if(d > n + k - 1){
       break
     }
   }
