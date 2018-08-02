@@ -1,4 +1,4 @@
-## Compute the mean clustering coefficient of a simulated RAN of index k at time n >= 2
+## Compute the Wiener index of a simulated RAN of index k at time n >= 2
 rm(list=ls(all=TRUE))
 ## install.packages("igraph")
 library(igraph)
